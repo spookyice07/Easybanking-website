@@ -1,0 +1,250 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+:root{
+    --Dark-Blue: hsl(233, 26%, 24%);
+   --Lime-Green: hsl(136, 65%, 51%);
+   --Bright-Cyan: hsl(192, 70%, 51%);
+   --Grayish-Blue: hsl(233, 8%, 62%);
+   --Light-Grayish-Blue: hsl(220, 16%, 96%);
+   --Very-Light-Gray: hsl(0, 0%, 98%);
+   --White: hsl(0, 0%, 100%);
+   --h1-color:black;
+}
+body{
+    font-size: 18px;
+    font-family: sans-serif;
+    color: var(--Grayish-Blue);
+}
+.container{
+    max-width: 1200px;
+    margin: auto;
+    
+}
+.header{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.links ul{
+    display: flex;
+}
+.links ul li{
+    list-style: none;
+    padding-left: 30px;
+}
+.links ul li::after{
+    content: "";
+    width: 0%;
+    height: 3px;
+    background: var(--Lime-Green);
+    display: block;
+    position: relative;
+    top:18px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.links ul li:hover::after{
+    width: 100%;
+}
+.links ul li a{
+    text-decoration: none;
+    color:var(--Grayish-Blue);
+}
+.links ul li a:hover{
+    color: var(--Dark-Blue);
+}
+.btn{
+    width:200px;
+    background-image: linear-gradient(to right, var(--Lime-Green), var(--Bright-Cyan));
+    text-align: center;
+    padding:10px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.btn:hover{
+    opacity: 0.5;
+}
+.btn a{
+    text-decoration: none;
+    color:white;
+}
+
+
+
+/*Hero-section*/
+.section{
+    background-color: var(--Very-Light-Gray);
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: visible;
+}
+.hero-section{
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    align-items: center;
+    justify-content: center;
+}
+.hero-write{
+    padding-top: 140px;
+}
+.hero-write h1{
+     color:var(--h1-color);
+     font-size:60px;
+     padding-right: 50px;
+}
+.hero-write p{
+    line-height: 28px;
+    padding-top:15px;
+    padding-bottom: 25px;
+}
+.hero-img img{
+    width:100%;
+}
+.hero-img{
+    width: 100%;
+    position: absolute;
+    left:580px;
+    top:-270px;
+}
+.hero-img2{
+    width:100%;
+    position: absolute;
+    left:720px;
+    top:-90px;
+    z-index: 4;
+    overflow:hidden;
+}
+
+/*Section2*/
+.section2{
+    background-color: var(--Light-Grayish-Blue);
+    position: relative;
+    margin-top: -120px;
+    height:95vh;
+}
+.section2 h1{
+    font-size:25px;
+    padding-top:70px;
+    font-weight:500;
+    color:var(--h1-color);
+}
+.section2 p{
+    padding-top:20px;
+}
+.reason-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding-top:70px;
+}
+.reason{
+    padding-right: 20px;
+}
+.reason h1{
+    padding-top:20px;
+    padding-bottom: 10px;
+}
+.reason p{
+    line-height: 25px;
+}
+
+/*Article*/
+.section3{
+    background-color: var(--Very-Light-Gray);
+    height:120vh;
+    padding-top:100px;
+}
+.section3 h1{
+    color:black;
+    font-size:40px;
+    padding-bottom: 50px;
+}
+.article{
+    background-color: var(--White);
+    width:270px;
+    height:550px;
+    border-radius: 10px;
+}
+.article:hover{
+    scale: 1.1;
+}
+.news{
+    padding:30px;
+    text-align: left;
+    
+}
+.article img{
+    width: 100%;
+    height:200px;
+    border-radius: 20px;
+}
+.news h3{
+    color: black;
+    padding-top:20px;
+    padding-bottom: 20px;
+}
+.news h3 a{
+    text-decoration: none;
+    color: black;
+}
+.news h3 a:hover{
+    color: var(--Lime-Green);
+}
+.news p{
+    line-height: 25px;
+}
+.article-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap:10px;
+}
+
+/*footer*/
+.footer{
+    background-color: var(--Dark-Blue);
+    height: 25vh;
+}
+.footer-flex{
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr 1fr;
+    padding-top:40px;
+}
+.info-link{
+    display: flex;
+    flex-direction: column;
+}
+.info-link a{
+    text-decoration: none;
+    color:white;
+    padding-bottom: 20px;
+}
+.info-link a:hover{
+    color:var(--Lime-Green);
+    transition: 0.5s ease-in-out;
+}
+.social-icons{
+    padding-top:60px;
+    padding-left: 10px;
+}
+.social-icons img{
+    padding-right: 7px;
+}
+.social-icons img:hover{
+    background-color: var(--Lime-Green);
+    padding: 0px;
+    
+}
+.rights p{
+    padding-top:40px;
+    font-size: 15px;
+}
+
+
